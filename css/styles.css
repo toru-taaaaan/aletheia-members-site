@@ -211,6 +211,10 @@ table th, table td {
   font-weight: normal;
   text-align: left; }
 
+.in-active {
+  color: lightgray;
+  border: 1px solid lightgray; }
+
 #footerBox #footer {
   width: 960px;
   margin: 0 auto;
