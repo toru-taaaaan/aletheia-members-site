@@ -290,3 +290,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+.active {
+  color: #fff;
+  background: #0364af;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
