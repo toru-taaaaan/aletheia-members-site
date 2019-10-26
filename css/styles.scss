@@ -51,6 +51,20 @@ li {
   text-align: -webkit-match-parent;
 }
 
+#naviBox {
+  #navi {
+    margin: auto;
+    width: 960px;
+    overflow: hidden;
+    li {
+      float: left;
+      display: flex;
+    }
+  }
+}
+
+
+
 .top-flat-button {
   display: inline-block;
   background: -moz-linear-gradient(top,#FFF 0%,#FFF 3%,#FBF9F3 3%,#FFF);
@@ -69,6 +83,7 @@ li {
   font-size: 12px;
   text-align: center;
   text-decoration: none;
+  float: right;
 }
 
 #headerBox {

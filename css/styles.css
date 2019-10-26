@@ -46,6 +46,16 @@ ul {
 li {
   text-align: -webkit-match-parent; }
 
+#naviBox #navi {
+  margin: auto;
+  width: 960px;
+  overflow: hidden; }
+  #naviBox #navi li {
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
 .top-flat-button {
   display: inline-block;
   background: -moz-linear-gradient(top, #FFF 0%, #FFF 3%, #FBF9F3 3%, #FFF);
@@ -63,7 +73,8 @@ li {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  float: right; }
 
 #headerBox {
   width: 100%;
