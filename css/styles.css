@@ -245,3 +245,6 @@ table th, table td {
   font-size: 85%;
   font-style: normal;
   text-align: center; }
+
+.lightgray {
+  color: lightgray; }
