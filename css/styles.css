@@ -7,21 +7,26 @@ html, body, h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, em, im
   padding: 0;
   border: none;
   letter-spacing: 0;
-  line-height: 2; }
+  line-height: 2;
+}
 
 html {
   display: block;
-  color: -internal-root-color; }
+  color: -internal-root-color;
+}
 
 body {
   color: #434343;
-  font: normal 85%/2em "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+  font: normal 85%/2em "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
 
 div {
-  display: block; }
+  display: block;
+}
 
 p {
-  padding: 0.4em 0 0.7em; }
+  padding: 0.4em 0 0.7em;
+}
 
 p {
   display: block;
@@ -32,33 +37,42 @@ p {
   -webkit-margin-start: 0px;
   margin-inline-start: 0px;
   -webkit-margin-end: 0px;
-  margin-inline-end: 0px; }
+  margin-inline-end: 0px;
+}
 
 a {
-  color: #0364af; }
+  color: #0364af;
+}
 
 img {
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
 
 ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+}
 
 li {
-  text-align: -webkit-match-parent; }
+  text-align: -webkit-match-parent;
+}
 
 #naviBox #navi {
   margin: auto;
   width: 960px;
-  overflow: hidden; }
-  #naviBox #navi li {
-    float: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+  overflow: hidden;
+}
+
+#naviBox #navi li {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 #logout {
   margin-top: 0px;
-  padding-top: 0px; }
+  padding-top: 0px;
+}
 
 .top-flat-button {
   display: inline-block;
@@ -78,60 +92,71 @@ li {
   font-size: 12px;
   text-align: center;
   text-decoration: none;
-  float: right; }
+  float: right;
+}
 
 #headerBox {
   width: 100%;
-  border-bottom: 2px solid #AFD4F1; }
+  border-bottom: 2px solid #AFD4F1;
+}
 
 #headerBox #header {
   width: 960px;
   margin: 0 auto;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 #headerBox #header #logo {
   float: left;
-  margin: 0 10px 0 0; }
+  margin: 0 10px 0 0;
+}
 
 #headerBox #header #description {
   float: left;
   padding: 55px 0 0;
   font-size: 90%;
-  margin-top: 0px; }
+  margin-top: 0px;
+}
 
 #mainBox {
-  width: 100%; }
+  width: 100%;
+}
 
 #naviBox {
   width: 100%;
   background-image: url(/public/images/navi_bg.png);
   background-position: 0 bottom;
   background-repeat: repeat-x;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 #mainBox #main #leftBox {
   float: left;
   width: 220px;
   padding: 30px 20px;
-  background: #fff; }
+  background: #fff;
+}
 
 #mainBox #main {
   width: 960px;
   margin: 0 auto;
   background: #fff;
   overflow: hidden;
-  zoom: 1; }
+  zoom: 1;
+}
 
 #pageTopBox {
   width: 100%;
   border-top: 2px solid #AFD4F1;
-  background: #f8f8f8; }
+  background: #f8f8f8;
+}
 
 #pageTopBox #pageTop {
   width: 960px;
   margin: 0 auto;
   padding: 10px 0;
-  text-align: right; }
+  text-align: right;
+}
 
 h3 {
   display: block;
@@ -144,26 +169,32 @@ h3 {
   margin-inline-start: 0px;
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .contentBox {
   width: auto;
   padding: 30px;
   overflow: hidden;
-  zoom: 1; }
+  zoom: 1;
+}
 
 .txtC {
-  text-align: center !important; }
+  text-align: center !important;
+}
 
 .sideBox {
-  padding: 0 0 20px; }
+  padding: 0 0 20px;
+}
 
 .sideBox #banner li {
-  padding: 0 0 20px; }
+  padding: 0 0 20px;
+}
 
 element.style {
   width: 220px;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 .button-normal {
   display: inline-block;
@@ -176,28 +207,33 @@ element.style {
   font-size: 15px;
   text-decoration: none;
   text-align: center;
-  width: 200px; }
+  width: 200px;
+}
 
 .contentBox {
   width: auto;
   padding: 30px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 table {
   width: 100%;
   margin: 0 0 20px;
   border: 1px solid #AFD4F1;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 table {
   border-collapse: separate;
-  border-spacing: 2px; }
+  border-spacing: 2px;
+}
 
 th {
   display: table-cell;
   vertical-align: inherit;
   font-weight: bold;
-  text-align: -internal-center; }
+  text-align: -internal-center;
+}
 
 .subttl {
   background-image: url(common.css);
@@ -209,34 +245,41 @@ th {
   padding: 0px 0px 0px 5px;
   border-left: 3px solid #0364af;
   background-position: 0px 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 #contractBox table th {
   font-weight: bold;
-  background: #E1F2FF; }
+  background: #E1F2FF;
+}
 
 #contractBox table td {
-  padding: 5px 10px; }
+  padding: 5px 10px;
+}
 
 table th {
-  background: #E1F2FF; }
+  background: #E1F2FF;
+}
 
 table th, table td {
   padding: 10px;
   border: 1px solid #AFD4F1;
   font-weight: normal;
-  text-align: left; }
+  text-align: left;
+}
 
 .in-active {
   color: lightgray;
-  border: 1px solid lightgray; }
+  border: 1px solid lightgray;
+}
 
 #footerBox #footer {
   width: 960px;
   margin: 0 auto;
   padding: 20px 0;
   overflow: hidden;
-  zoom: 1; }
+  zoom: 1;
+}
 
 #footerBox #footer address {
   width: 960px;
@@ -244,18 +287,26 @@ table th, table td {
   padding: 0 0 10px;
   font-size: 85%;
   font-style: normal;
-  text-align: center; }
+  text-align: center;
+}
 
 .lightgray {
-  color: lightgray; }
+  color: lightgray;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 .active {
   color: #fff;
-  background: #0364af;
+  background: #0099CC;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid #fff; }
+  border: 1px solid #fff;
+}
+
+.co-box {
+  background: #E1F2FF;
+}
