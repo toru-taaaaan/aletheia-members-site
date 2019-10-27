@@ -259,3 +259,7 @@ table {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #fff; }
+
+.co-box {
+  font-size: 64px;
+  background: blue; }
