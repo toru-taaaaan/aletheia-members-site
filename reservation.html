@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta name="robots" content="noindex,nofollow,noarchive">
+		<title>アリシアクリニック 会員サイト</title>
+		<script>
+			var action = 'reserve.Reserves';
+			var method = 'index';
+			var uploadLimitSize = 20971520;
+		</script>
+		<link rel="shortcut icon" href="/images/ALETHEIA.ico">
+		<link type="text/css" href="css/styles.css" rel="stylesheet" media="all">
+		<script type="text/javascript" src="/public/js/loader.js"></script>
+
+		<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="/public/js/page/html5.js"></script>
+		<script type="text/javascript" src="/public/js/page/ms.hack.js"></script>
+		<![endif]-->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-39983064-2', 'aletheia-clinic.com');
+		ga('send', 'pageview');
+
+		</script>
+	</head>
+
+	<body id="top">
+		<div id="container">
+			
+			<!-- Header -->
+			<div id="headerBox">
+				<div id="header">
+					<p id="logo"><a href="/"><img src="images/logo.gif" alt="アリシアクリニック　| 会員サイト"></a></p>
+					<p id="description">アリシアクリニックの女性脱毛会員専用サイトです。</p>
+					<p id="logout">
+						<a href="/authentication/logout" class="top-flat-button"><img style="margin:8px 2px;" src="images/arrw_icon.png"/>ログアウト</a>
+					</p>
+				</div>
+			</div>
+
+			<!-- Navi -->
+			<div id="naviBox">
+				<ul id="navi">
+					<li><a href="/contract"><img src="images/navi01_off.png?build=20160715" alt="契約内容を確認"></a></li>
+					<li><a href="index.html"><img src="images/navi02_off.png?build=20160715" alt="予約状況の確認・変更・キャンセル"></a></li>
+					<li><a href="reservation.html"><img src="images/navi03_off.png?build=20160715" alt="次回の予約をする"></a></li>
+					<li><a href="/member/members"><img src="images/navi05_off.png?build=20160715" alt="会員情報の変更"></a></li>
+				</ul>
+			</div>
+
+			<!-- Main -->
+			<div id="mainBox">
+				<div id="main">
+				
+							<!-- Left -->
+		<div id="leftBox">
+        <div class="sideBox">
+<div class="subttl">検索条件</div>
+<form action="/reserve/reserves/search" method="post" accept-charset="utf-8" enctype="application/x-www-form-urlencoded" id="searchReserveForm" ><input type="hidden" name="authenticityToken" value="5bf08e7d1e8e151ed0cc8f99c0bfd094569bf2d0">
+<input type="hidden" name="reserveId" value="">
+<input type="hidden" name="isFirst" value="false">
+
+<input type="hidden" name="condition.equipmentType" value="">
+<input type="hidden" name="condition.isDebug" value="false">
+
+<dl id="search">
+<dt>ご予約院</dt>
+<dd id="clinic" style="text-align:left;">
+                <select name="condition.shopCode1">
+<option value=""> -- 希望の院1 -- </option>
+                              <optgroup label='東京23区' />
+                <option value="24" >池袋院</option>
+                                              <option value="38" >新宿西口院</option>
+                                              <option value="52" >銀座院</option>
+                                              <option value="69" >表参道院</option>
+                                              <option value="71" >新宿東口院</option>
+                                              <option value="78" >渋谷駅前院</option>
+                                              <option value="85" >上野院</option>
+                                              <option value="A6" >銀座6丁目院</option>
+                                                <optgroup label='東京23区外' />
+                <option value="A2" >立川院</option>
+                                              <option value="A3" >町田院</option>
+                                                <optgroup label='神奈川県' />
+                <option value="70" >横浜院</option>
+                                              <option value="A4" selected>川崎駅前院</option>
+                                                <optgroup label='千葉県' />
+                <option value="68" >船橋院</option>
+                                              <option value="A1" >柏院</option>
+                                              <option value="A9" >千葉院</option>
+                                                <optgroup label='埼玉県' />
+                <option value="82" >大宮院</option>
+                                                <optgroup label='大阪府' />
+                <option value="A7" >心斎橋院</option>
+                                                <optgroup label='愛知県' />
+                <option value="A8" >名古屋駅前院</option>
+                            </select><br>
+        <select name="condition.shopCode2">
+<option value=""> -- 希望の院2 -- </option>
+                              <optgroup label='東京23区' />
+                <option value="24" >池袋院</option>
+                                              <option value="38" >新宿西口院</option>
+                                              <option value="52" >銀座院</option>
+                                              <option value="69" >表参道院</option>
+                                              <option value="71" >新宿東口院</option>
+                                              <option value="78" >渋谷駅前院</option>
+                                              <option value="85" >上野院</option>
+                                              <option value="A6" >銀座6丁目院</option>
+                                                <optgroup label='東京23区外' />
+                <option value="A2" >立川院</option>
+                                              <option value="A3" >町田院</option>
+                                                <optgroup label='神奈川県' />
+                <option value="70" >横浜院</option>
+                                              <option value="A4" >川崎駅前院</option>
+                                                <optgroup label='千葉県' />
+                <option value="68" >船橋院</option>
+                                              <option value="A1" >柏院</option>
+                                              <option value="A9" >千葉院</option>
+                                                <optgroup label='埼玉県' />
+                <option value="82" >大宮院</option>
+                                                <optgroup label='大阪府' />
+                <option value="A7" >心斎橋院</option>
+                                                <optgroup label='愛知県' />
+                <option value="A8" >名古屋駅前院</option>
+                            </select><br>
+        <select name="condition.shopCode3">
+<option value=""> -- 希望の院3 -- </option>
+                              <optgroup label='東京23区' />
+                <option value="24" >池袋院</option>
+                                              <option value="38" >新宿西口院</option>
+                                              <option value="52" >銀座院</option>
+                                              <option value="69" >表参道院</option>
+                                              <option value="71" >新宿東口院</option>
+                                              <option value="78" >渋谷駅前院</option>
+                                              <option value="85" >上野院</option>
+                                              <option value="A6" >銀座6丁目院</option>
+                                                <optgroup label='東京23区外' />
+                <option value="A2" >立川院</option>
+                                              <option value="A3" >町田院</option>
+                                                <optgroup label='神奈川県' />
+                <option value="70" >横浜院</option>
+                                              <option value="A4" >川崎駅前院</option>
+                                                <optgroup label='千葉県' />
+                <option value="68" >船橋院</option>
+                                              <option value="A1" >柏院</option>
+                                              <option value="A9" >千葉院</option>
+                                                <optgroup label='埼玉県' />
+                <option value="82" >大宮院</option>
+                                                <optgroup label='大阪府' />
+                <option value="A7" >心斎橋院</option>
+                                                <optgroup label='愛知県' />
+                <option value="A8" >名古屋駅前院</option>
+                            </select>
+
+</dd>
+
+<dt>ご希望日(期間指定)</dt>
+<dd id="date">
+<ul>
+<li>
+<input type="text" name="condition.fromDate" value="2019-10-27" class="date col35" readonly="readonly" data-datefrom="2019-10-27" data-dateto="2020-03-31" />
+<span class="fSize90">から</span>
+<input type="text" name="condition.toDate" value="2020-03-31" class="date col35" readonly="readonly" data-datefrom="2019-10-27" data-dateto="2020-03-31" />
+</li>
+</ul>
+</dd>
+
+<dt>ご希望開始時間帯</dt>
+<dd id="time">
+<ul>
+<li><label for="condition.isTimePeriod1" class="checked">
+<input type="checkbox" id="condition.isTimePeriod1" name="condition.isTimePeriod1" value="true" class="partsCheck" checked/> 11:00-14:00	<input type="hidden" id="condition.isTimePeriod1" name="condition.isTimePeriod1" value="false" />
+</label></li>
+<li><label for="condition.isTimePeriod2" class="checked">
+<input type="checkbox" id="condition.isTimePeriod2" name="condition.isTimePeriod2" value="true" class="partsCheck" checked/> 14:00-17:00	<input type="hidden" id="condition.isTimePeriod2" name="condition.isTimePeriod2" value="false" />
+</label></li>
+<li><label for="condition.isTimePeriod3" class="checked">
+<input type="checkbox" id="condition.isTimePeriod3" name="condition.isTimePeriod3" value="true" class="partsCheck" checked/> 17:00-20:00	<input type="hidden" id="condition.isTimePeriod3" name="condition.isTimePeriod3" value="false" />
+</label></li>
+<li><label for="condition.isTimePeriod4" class="checked">
+<input type="checkbox" id="condition.isTimePeriod4" name="condition.isTimePeriod4" value="true" class="partsCheck" checked/> 20:00-22:30(池袋院のみ)	<input type="hidden" id="condition.isTimePeriod4" name="condition.isTimePeriod4" value="false" />
+</label></li>
+</ul>
+</dd>
+
+
+  <dt>全身（VIO除く）から選択</dt>
+<dd id="bodyPart">
+                      <input type="checkbox" name="condition.isAllNonVioOneTime" value="true" id="condition.isAllNonVioOneTime:EQUIP_TITANIUM"  class="partsCond typeAllOneType EQUIP_TITANIUM"> <label for="condition.isAllNonVioOneTime:EQUIP_TITANIUM">全身（VIO除く） <img src="/public/images/EQUIP_TITANIUM.png" alt="" style="width:25px"></label>
+<input type="hidden" id="condition.isAllNonVioOneTime" name="condition.isAllNonVioOneTime" value="false" />
+<br>
+<p class="partsInfo">(前回施術日：2019年10月1日)</p>
+        </dd>
+
+
+
+
+            <dt>セットコースから選択</dt>
+<dd id="bodyPart">
+            <input type="checkbox" name="selectedSetCourses" value="A001910" id="setA001910:EQUIP_LUMINUS" class="partsCond typeSet EQUIP_LUMINUS" > <label for="setA001910:EQUIP_LUMINUS">VIOビューティーセットコース（し放題） <img src="/public/images/EQUIP_LUMINUS.png" alt="" style="width:25px"></label><br>
+<p class="partsInfo">前回施術日：(2019年10月01日)</p>
+          </dd>
+
+                  <dt>部位から選択</dt>
+<dd id="bodyPart">
+            <input type="checkbox" name="selectedBodyParts" value="4" id="part4:EQUIP_LUMINUS" class="partsCond typeParts EQUIP_LUMINUS" > <label for="part4:EQUIP_LUMINUS">鼻下 <img src="/public/images/EQUIP_LUMINUS.png" alt="" style="width:25px"></label><br>
+<p class="partsInfo">前回施術日：(2019年10月15日)</p>
+          </dd>
+
+<dd id="btn">
+<a class="button-normal" id="searchBtn" href="javascript:void(0);" >空き状況検索</a>
+</dd>
+</dl>
+
+</form></div>					</div>
+				
+					<!-- Right -->
+					<div id="rightBox">
+						<div class="contentBox" id="reserveBox">
+							<div class="imgttl">
+								<img src="images/reserveconf_ttl.png" alt="現在のご予約一覧">
+							</div>
+							<p class="txtC"></p>
+							<div class="subttl">
+								5回完了コースご予約一覧
+							</div>
+							<table>
+									<tr>
+											<td class="co-box">初回カウンセリング</td>
+											<td class="txtC">2019年10月25日(金)</td>
+											<td class="txtR">銀座院</td>
+										</tr>
+							</table>
+								<div class="content">
+										<table>
+											
+											<tr>
+												<th colspan="6">
+													契約日:2019年10月25日 ◆5回完了コース
+												</th>
+											</tr>
+											
+											<tr>
+												<th class="col25">回数</th>
+												<th>予約日</th>
+												<th >予約店舗</th>
+												<th >抜け感（イメージ）</th>
+												<th class="col25">変更</th>
+												<th class="col25">キャンセル</th>
+											</tr>
+											<tr>
+												<td class="lightgray">1回目</td>
+												<td class="txtC lightgray">2019年11月1日(金)</td>
+												<td class="txtR lightgray">銀座院</td>
+												<td class="txtR"><img src="./images/datsumo1.png" alt="datsumo"></td>
+												<td><button class="in-active">変更</button></td>
+												<td><button class="in-active">キャンセル</button></td>
+											</tr>
+											<tr>
+												<td class="lightgray">2回目</td>
+												<td class="txtC lightgray">2020年1月8日(金)</td>
+												<td class="txtR lightgray">銀座院</td>
+												<td class="txtR"><img src="./images/datsumo2.png" alt="datsumo"></td>
+												<td><button class="in-active">変更</button></td>
+												<td><button class="in-active">キャンセル</button></td>
+											</tr>
+											<tr>
+												<td>3回目</td>
+												<td class="txtC">2020年3月25日(金)</td>
+												<td class="txtR">銀座院</td>
+												<td class="txtR"><img src="./images/datsumo3.png" alt="datsumo"></td>
+												<td><button class="active">変更</button></td>
+												<td><button class="active">キャンセル</button></td>
+											</tr>
+											<tr>
+												<td>4回目</td>
+												<td class="txtC">2020年5月25日(金)</td>
+												<td class="txtR">銀座院</td>
+												<td class="txtR"><img src="./images/datsumo4.png" alt="datsumo"></td>
+												<td><button class="in-active">変更</button></td>
+												<td><button class="in-active">キャンセル</button></td>
+											</tr>
+											<tr>
+												<td>5回目</td>
+												<td class="txtC">2020年7月25日(金)</td>
+												<td class="txtR">銀座院</td>
+												<td class="txtR"><img src="./images/datsumo4.png" alt="datsumo"></td>
+												<td><button class="in-active">変更</button></td>
+												<td><button class="in-active">キャンセル</button></td>
+											</tr>											
+										</table>
+									</div>
+
+
+									<div class="subttl">5回完了コースご予約一覧</div>
+										<ul>
+											<li>ご予約の変更・キャンセルをされますと、それ以降のご予約はキャンセル扱いとなります。</li>
+											<li>次回分のご予約は会員サイトよりご予約が可能ですので、来院時にスタッフと一緒に５回目までのご予約をお取りください。</li>
+											<li>6回目以降の施術は、都度払いのご契約となります。詳しくはカウンセラーまでお問い合わせください。</li>
+										</ul>
+
+						
+								</div>
+							</div>					
+						</div>
+					</div>
+
+					<!-- PageTop -->
+					<div id="pageTopBox">
+						<div id="pageTop">
+							<a href="#top"><img src="images/pagetop.png" alt="PAGETOPへ" class="verM"></a>
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<div id="footerBox">
+						<div id="footer">
+							<address>copyright© ALETHEIA CLINIC All Rights Reserved.</address>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
