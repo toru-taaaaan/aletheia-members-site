@@ -86,7 +86,7 @@
       <input type="hidden" name="condition.equipmentType" value="">
       <input type="hidden" name="condition.isDebug" value="false">
       <dl id="search">
-        <dt>ご予約院</dt>
+        <dt class="dt-bottomLine">ご予約院</dt>
         <dd id="clinic" style="text-align:left;">
           <select name="condition.shopCode1">
             <option value="">-- 希望の院1 -- </option>
@@ -175,7 +175,7 @@
             <option value="A8" >名古屋駅前院</option>
           </select>
         </dd>
-        <dt>ご希望日(期間指定)</dt>
+        <dt class="dt-bottomLine">ご希望日(期間指定)</dt>
         <dd id="date">
           <ul>
             <li>
@@ -185,7 +185,7 @@
             </li>
           </ul>
         </dd>
-        <dt>ご希望開始時間帯</dt>
+        <dt class="dt-bottomLine">ご希望開始時間帯</dt>
         <dd id="time">
           <ul>
             <li>
@@ -214,7 +214,7 @@
             </li>
           </ul>
         </dd>
-        <dt>全身（VIO除く）から選択</dt>
+        <dt class="dt-bottomLine">全身（VIO除く）から選択</dt>
         <dd id="bodyPart">
           <input type="checkbox" name="condition.isAllNonVioOneTime" value="true" id="condition.isAllNonVioOneTime:EQUIP_TITANIUM" class="partsCond typeAllOneType EQUIP_TITANIUM">
           <label for="condition.isAllNonVioOneTime:EQUIP_TITANIUM">全身（VIO除く） 
@@ -224,7 +224,7 @@
           <br>
           <p class="partsInfo">(前回施術日：2019年10月1日)</p>
         </dd>
-        <dt>セットコースから選択</dt>
+        <dt class="dt-bottomLine">セットコースから選択</dt>
         <dd id="bodyPart">
           <input type="checkbox" name="selectedSetCourses" value="A001910" id="setA001910:EQUIP_LUMINUS" class="partsCond typeSet EQUIP_LUMINUS" >
           <label for="setA001910:EQUIP_LUMINUS">VIOビューティーセットコース（し放題） 
@@ -233,7 +233,7 @@
           <br>
           <p class="partsInfo">前回施術日：(2019年10月01日)</p>
         </dd>
-        <dt>部位から選択</dt>
+        <dt class="dt-bottomLine">部位から選択</dt>
         <dd id="bodyPart">
           <input type="checkbox" name="selectedBodyParts" value="4" id="part4:EQUIP_LUMINUS" class="partsCond typeParts EQUIP_LUMINUS" >
           <label for="part4:EQUIP_LUMINUS">鼻下 
@@ -250,7 +250,44 @@
     </div>
     </div>
     <!-- Right -->
-    
+    <div id="rightBox">
+			
+		<div class="contentBox" id="reserveBox">
+			
+				
+			<div class="imgttl"><img src="images/reserve_ttl.png" alt="オンライン予約"></div>
+		
+			
+		
+			
+			<dl id="info">
+			<dt>ご注意</dt>
+			<dd>
+				<ul class="defaultList">
+							<li>■現在予約中の照射箇所を新しく予約することはできません。</li>
+									<li>■前回から3ヶ月以内の照射箇所は、3ヶ月空けた日付でご予約してください。</li>
+							<li>■予約時間の5分前のご来院をお願い致します。</li>
+					<li>■有効期限にご注意ください。</li>
+					<li>※有効期限は「契約内容を確認」よりご確認いただけます。</li>
+				</ul>
+				<em class="fSize120">下記の場合は院までお電話ください。</em>
+				<ul class="defaultList">
+					<li>■麻酔やシェービング（別途料金発生）をご希望される方。</li>
+					<li>■新しく部位の追加申し込みをご希望される方。</li>
+					<li>■有効期限を過ぎている方。</li>
+					<li>■当日にご予約を変更・キャンセルされたい方。</li>
+					<li>■1回契約のコースまたプレゼント分の予約を取得・変更をされたい方</li>
+					<li>■初回照射のご予約を取得・変更をされたい方</li>
+					<li>■複数コースを同時にご予約中の場合に、一部コースのみ予約変更・キャンセルをされたい方</li>
+				</ul>
+				※上記以外でもお手入れ箇所の組み合わせによりオンライン予約できない場合がございます。
+			</dd>
+		</dl>
+		</div>
+				</div>
+			</div>
+		</div>
+		
     <!-- PageTop -->
     <div id="pageTopBox">
     <div id="pageTop">
