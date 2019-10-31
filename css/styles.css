@@ -271,6 +271,8 @@ table th, table td {
 .in-active {
   color: lightgray;
   border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 #footerBox #footer {
@@ -309,4 +311,56 @@ table {
 
 .co-box {
   background: #E1F2FF;
+}
+
+.sideBox #search dt {
+  margin: 0 0 5px;
+  padding: 0 0 5px 5px;
+  background: url(images/separate_s.png) 0 100% no-repeat;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.sideBox #search dd {
+  padding: 0 5px 20px;
+}
+
+input[type=text], input[type=password], input[type=tel], input[type=email], select, textarea {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  behavior: url(/public/css/ie-css3.htc);
+  z-index: 1;
+}
+
+.imgttl {
+  margin: 0 0 10px;
+  padding: 0 0 0;
+  border: none;
+  font-weight: normal;
+  font-size: 100%;
+  line-height: 1;
+}
+
+#reserveBox #info dt {
+  padding: 3px 0 3px 10px;
+  background: #E1F2FF;
+  color: #0364af;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+#reserveBox #info {
+  border: 5px solid #E1F2FF;
+}
+
+#reserveBox #info dd {
+  padding: 15px 15px 5px 15px;
+}
+
+.dt-bottomLine {
+  border-bottom: 1px solid #0099CC;
+  font-weight: bold;
 }
