@@ -86,7 +86,7 @@
       <input type="hidden" name="condition.equipmentType" value="">
       <input type="hidden" name="condition.isDebug" value="false">
       <dl id="search">
-        <dt class="dt-bottomLine">ご予約院</dt>
+        <div class="serch-title"><dt>ご予約院</dt></div>
         <dd id="clinic" style="text-align:left;">
           <select name="condition.shopCode1">
             <option value="">-- 希望の院1 -- </option>
@@ -175,7 +175,7 @@
             <option value="A8" >名古屋駅前院</option>
           </select>
         </dd>
-        <dt class="dt-bottomLine">ご希望日(期間指定)</dt>
+        <div class="serch-title"><dt>ご希望日(期間指定)</dt></div>
         <dd id="date">
           <ul>
             <li>
@@ -185,7 +185,7 @@
             </li>
           </ul>
         </dd>
-        <dt class="dt-bottomLine">ご希望開始時間帯</dt>
+        <div class="serch-title"><dt>ご希望開始時間帯</dt></div>
         <dd id="time">
           <ul>
             <li>
@@ -214,7 +214,7 @@
             </li>
           </ul>
         </dd>
-        <dt class="dt-bottomLine">全身（VIO除く）から選択</dt>
+        <div class="serch-title"><dt>全身（VIO除く）から選択</dt></div>
         <dd id="bodyPart">
           <input type="checkbox" name="condition.isAllNonVioOneTime" value="true" id="condition.isAllNonVioOneTime:EQUIP_TITANIUM" class="partsCond typeAllOneType EQUIP_TITANIUM">
           <label for="condition.isAllNonVioOneTime:EQUIP_TITANIUM">全身（VIO除く） 
@@ -224,7 +224,7 @@
           <br>
           <p class="partsInfo">(前回施術日：2019年10月1日)</p>
         </dd>
-        <dt class="dt-bottomLine">セットコースから選択</dt>
+        <div class="serch-title"><dt>セットコースから選択</dt></div>
         <dd id="bodyPart">
           <input type="checkbox" name="selectedSetCourses" value="A001910" id="setA001910:EQUIP_LUMINUS" class="partsCond typeSet EQUIP_LUMINUS" >
           <label for="setA001910:EQUIP_LUMINUS">VIOビューティーセットコース（し放題） 
@@ -233,7 +233,7 @@
           <br>
           <p class="partsInfo">前回施術日：(2019年10月01日)</p>
         </dd>
-        <dt class="dt-bottomLine">部位から選択</dt>
+        <div class="serch-title"><dt>部位から選択</dt></div>
         <dd id="bodyPart">
           <input type="checkbox" name="selectedBodyParts" value="4" id="part4:EQUIP_LUMINUS" class="partsCond typeParts EQUIP_LUMINUS" >
           <label for="part4:EQUIP_LUMINUS">鼻下 
@@ -241,7 +241,15 @@
           </label>
           <br>
           <p class="partsInfo">前回施術日：(2019年10月15日)</p>
-        </dd>
+		</dd>
+		<div class="serch-title"><dt>６回完了コースから選択</dt></div>
+        <dd id="bodyPart">
+          <input type="checkbox" name="selectedBodyParts" value="4" id="part4:EQUIP_LUMINUS" class="partsCond typeParts EQUIP_LUMINUS" >
+          <label for="part4:EQUIP_LUMINUS">３回目
+          </label>
+          <br>
+          <p class="partsInfo">前回施術日：(2020年1月8日)</p>
+		</dd>
         <dd id="btn">
           <a class="button-normal" id="searchBtn" href="javascript:void(0);" >空き状況検索</a>
         </dd>
