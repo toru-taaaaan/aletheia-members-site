@@ -315,7 +315,7 @@ table {
 
 .sideBox #search dt {
   margin: 0 0 5px;
-  padding: 0 0 5px 5px;
+  padding: 5px 10px;
   background: url(images/separate_s.png) 0 100% no-repeat;
   font-weight: bold;
   font-size: 90%;
