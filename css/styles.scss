@@ -369,6 +369,7 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
 .btn {
   display: flex;
   justify-content: space-between;
+  user-select: none;
 }
 
 .img {

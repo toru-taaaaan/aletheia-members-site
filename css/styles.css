@@ -375,6 +375,10 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .img {
