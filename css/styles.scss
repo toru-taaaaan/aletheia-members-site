@@ -299,6 +299,9 @@ table {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #fff;
+  width: 200px;
+  text-align: center;
+  margin: 0 50px;
 }
 
 .co-box {
@@ -363,5 +366,8 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
 
 }
 
-
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
 
