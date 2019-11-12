@@ -307,6 +307,11 @@ table {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+}
+
+.active:hover {
+  opacity: 0.8;
 }
 
 .in-active {
@@ -394,12 +399,4 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
 
 .img {
   margin: 60px 0;
-}
-
-.dotline {
-  border-bottom: 1px dotted #AFD4F1;
-}
-
-.hair {
-  margin: 10px 0;
 }
