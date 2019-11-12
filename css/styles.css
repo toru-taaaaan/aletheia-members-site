@@ -400,3 +400,7 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
 .img {
   margin: 60px 0;
 }
+
+.white {
+  color: white;
+}
