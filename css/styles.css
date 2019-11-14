@@ -170,6 +170,7 @@ h3 {
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  margin-top: 0;
 }
 
 .contentBox {
@@ -300,7 +301,7 @@ table {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid #fff;
-  width: 40px;
+  width: 45px;
   text-align: center;
   font-size: 9px;
   -webkit-user-select: none;
@@ -319,7 +320,7 @@ table {
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 5px 10px;
-  width: 40px;
+  width: 45px;
   text-align: center;
   font-size: 9px;
   -webkit-user-select: none;
@@ -407,4 +408,10 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
 
 .in-active-img {
   display: none;
+}
+
+.blue_title {
+  color: #0099CC;
+  font-size: 18px;
+  border-bottom: 1px solid #0099CC;
 }
