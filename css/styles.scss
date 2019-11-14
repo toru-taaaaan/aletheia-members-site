@@ -401,11 +401,29 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
   border-bottom: 1px solid #0099CC;
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
-  body {
-    background: skyblue;
-  }
+a {
+  text-decoration: none;
 }
+.menu {
+  width: 240px;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  font-size:14px;
+  color: #36a0ff;
+  background: #f6f6f6;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 -4px 5px -2px #d6d6d6 inset;
+}
+
+.menu:hover {
+  opacity: 0.9;
+}
+
+// @media (min-width: 600px) and (max-width: 900px) {
+//   body {
+//     background: skyblue;
+//   }
+// }
 
 @media (max-width: 600px) {
   body {
