@@ -266,7 +266,6 @@ table th, table td {
   padding: 10px;
   border: 1px solid #AFD4F1;
   font-weight: normal;
-  text-align: left;
 }
 
 #footerBox #footer {
@@ -309,6 +308,7 @@ table {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .active:hover {
@@ -327,6 +327,7 @@ table {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 0 auto;
 }
 
 .co-box {
@@ -414,4 +415,16 @@ input[type=text], input[type=password], input[type=tel], input[type=email], sele
   color: #0099CC;
   font-size: 18px;
   border-bottom: 1px solid #0099CC;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    background: skyblue;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
 }
